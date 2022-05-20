@@ -46,7 +46,7 @@ h3 {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: 20px;
   padding: 2rem 0;
   width: 100%;
 }
@@ -174,11 +174,12 @@ a {
 .about-person-1 {
   align-items: center;
   display: flex;
+  flex-direction: column;
 }
 .about-person-2 {
   align-items: center;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   text-align: right;
 }
 
@@ -290,49 +291,7 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  * {
-    box-sizing: border-box;
-  }
-
-  :root {
-    --color-primary: #4e4e4e;
-    --color-secondary: #405d78;
-    --color-headings: #ffffff;
-    --color-headings-2: #152d41;
-    --color-body: #000000;
-  }
-
   /* Typography */
-
-  body {
-    color: var(--color-body);
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 21px;
-  }
-
-  h1,
-  h2,
-  h3 {
-    color: var(--color-headings);
-    font-weight: bold;
-    padding-bottom: 30px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  h2 {
-    font-size: 18px;
-    padding-bottom: 2rem;
-  }
-
-  h3 {
-    color: var(--color-body);
-    font-size: 18px;
-    padding-bottom: 2rem;
-  }
 
   .container {
     width: 960px;
