@@ -283,6 +283,9 @@ a {
     color: black;
     transition: 1s;
   }
+  .services-item {
+    width: 30%;
+  }
   .services-item:hover {
     transform: scale(1.05);
     transition: 1s;
