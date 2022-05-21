@@ -11,7 +11,9 @@
 }
 
 /* Typography */
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: var(--color-body);
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -44,8 +46,7 @@ h3 {
 }
 
 .container {
-  margin-left: 20px;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -105,7 +106,7 @@ a {
   display: flex;
   height: 50px;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 .nav__logo {
@@ -154,6 +155,7 @@ a {
 
 .about-title {
   color: var(--color-headings-2);
+  text-align: center;
 }
 
 .about-body {
@@ -171,7 +173,8 @@ a {
   width: 197px;
 }
 
-.about-person {
+.about-person-1,
+.about-person-2 {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -201,11 +204,13 @@ a {
 .services-title {
   flex: 1 1 100%;
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .services-items {
   align-items: center;
   color: var(--color-body);
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
@@ -222,7 +227,7 @@ a {
   font-size: 24px;
   justify-content: center;
   position: relative;
-  width: 200%;
+  width: 50%;
 }
 
 .new-line {
@@ -404,11 +409,13 @@ a {
 
   .about-title {
     color: var(--color-headings-2);
+    text-align: left;
   }
 
   .about-body {
     display: flex;
     flex-direction: column;
+    text-align: inherit;
   }
 
   .about-photo {
@@ -422,6 +429,7 @@ a {
 
   .about-person-1 {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
   .about-person-2 {
@@ -465,6 +473,7 @@ a {
     gap: 50px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
 
   .services-item {
@@ -477,7 +486,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
   }
 
   .new-line {
