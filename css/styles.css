@@ -11,9 +11,11 @@
 }
 
 /* Typography */
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   color: var(--color-body);
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -40,9 +42,9 @@ h2 {
 }
 
 h3 {
-  padding-bottom: 2rem;
   color: var(--color-body);
   font-size: 18px;
+  padding-bottom: 2rem;
 }
 
 .container {
@@ -203,19 +205,19 @@ a {
 
 .services-title {
   flex: 1 1 100%;
-  text-align: center;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .services-items {
   align-items: center;
   color: var(--color-body);
-  width: 100%;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
-  flex-direction: column;
+  width: 100%;
 }
 
 .services-item {
@@ -302,9 +304,9 @@ a {
   }
 
   .container {
-    width: 960px;
     margin: 0 auto;
     padding: 2rem 0;
+    width: 960px;
   }
 
   /* Links */
@@ -328,52 +330,10 @@ a {
     padding-left: 0;
   }
 
-  .list--inline .list__item {
-    display: inline-block;
-    margin-right: 2rem;
-  }
-
-  /* Icons */
-
-  .icon {
-    background-color: transparent;
-    color: var(--color-headings);
-  }
-
-  /* Buttons */
-
-  .btn {
-    background-color: transparent;
-    border: 3px solid var(--color-headings);
-    color: var(--color-headings);
-    cursor: pointer;
-    font-size: 21px;
-    font-weight: 600;
-    padding: 10px 30px;
-  }
-
   /* Navigation Bar */
 
-  .nav {
-    background-color: var(--color-primary);
-  }
   .nav .container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
     padding: 1rem 0;
-    height: 50px;
-  }
-
-  .nav__logo {
-    color: var(--color-headings);
-  }
-
-  .nav__list {
-    display: flex;
-    font-size: 2rem;
-    margin: 0;
-    width: auto;
   }
 
   .nav__item {
@@ -385,126 +345,43 @@ a {
     transition: color 0.5s;
   }
 
-  .nav-company {
-    color: var(--color-headings);
-    font-weight: bold;
-  }
-
-  /* Hero */
-
-  .hero {
-    background-image: url(/images/forest-bgc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .hero .container {
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 50px);
-    justify-content: center;
-  }
-
   /* About */
 
   .about-title {
-    color: var(--color-headings-2);
     text-align: left;
   }
 
   .about-body {
-    display: flex;
-    flex-direction: column;
     text-align: inherit;
   }
 
-  .about-photo {
-    border-radius: 50%;
-    flex-shrink: 0;
-    height: 197px;
-    object-fit: cover;
-    width: 197px;
-    margin: 2rem 2rem 0 2rem;
-  }
-
   .about-person-1 {
-    display: flex;
     flex-direction: row;
-    align-items: center;
   }
   .about-person-2 {
-    display: flex;
     flex-direction: row-reverse;
     text-align: right;
-    align-items: center;
-  }
-
-  .about-name {
-    color: var(--color-body);
-    display: flex;
   }
 
   /* Services */
 
-  .services {
-    background-color: var(--color-secondary);
-  }
-
   .services .container {
-    align-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
     justify-content: space-around;
-    text-align: center;
     width: 960px;
   }
 
   .services-title {
-    flex: 1 1 100%;
     text-align: left;
   }
 
   .services-items {
-    color: var(--color-body);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
     flex-direction: row;
   }
 
   .services-item {
     box-shadow: 0 8px 4px -4px #4f4f4f;
-    background-color: var(--color-headings);
-    aspect-ratio: 1/1;
-    width: 25%;
     position: relative;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .new-line {
-    font-size: 18px;
-  }
-
-  .circle::after {
-    background-color: #e07a64;
-    border-radius: 50%;
-    content: " ";
-    display: block;
-    height: 20px;
-    left: -10px;
-    position: absolute;
-    top: -10px;
-    width: 20px;
+    width: 25%;
   }
 
   /* Footer */
@@ -514,22 +391,6 @@ a {
   }
 
   .footer .container {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
     flex-direction: row;
-  }
-
-  .link-footer {
-    color: var(--color-headings);
-    margin: 0.5rem;
-  }
-
-  .footer-list {
-    display: flex;
-    font-size: 2rem;
-    margin: 0;
-    width: auto;
   }
 }
