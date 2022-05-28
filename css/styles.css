@@ -103,6 +103,7 @@ a {
 .nav {
   background-color: var(--color-primary);
 }
+
 .nav .container {
   align-items: center;
   display: flex;
@@ -229,7 +230,7 @@ a {
   font-size: 24px;
   justify-content: center;
   position: relative;
-  width: 50%;
+  width: 65%;
 }
 
 .new-line {
@@ -285,9 +286,15 @@ a {
     color: black;
     transition: 1s;
   }
-  .services-item {
-    width: 30%;
+
+  .services-items {
+    flex-direction: row;
   }
+
+  .services-item {
+    width: 45%;
+  }
+
   .services-item:hover {
     transform: scale(1.05);
     transition: 1s;
@@ -358,6 +365,7 @@ a {
   .about-person-1 {
     flex-direction: row;
   }
+
   .about-person-2 {
     flex-direction: row-reverse;
     text-align: right;
